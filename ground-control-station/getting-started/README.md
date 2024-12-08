@@ -14,8 +14,8 @@ description: This Page goes through the basic setup of development environment
 [yarn-installation.md](yarn-installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="react-application.md" %}
-[react-application.md](react-application.md)
+{% content-ref url="react-installation.md" %}
+[react-installation.md](react-installation.md)
 {% endcontent-ref %}
 
 {% content-ref url="electron-installation.md" %}
