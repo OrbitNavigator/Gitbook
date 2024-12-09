@@ -55,11 +55,6 @@ const createWindow = () => {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, "preload.mjs"),
-      contextIsolation: true,
-      nodeIntegration: true,
-    },
   });
 
   if (process.env.NODE_ENV === "development") {
@@ -93,7 +88,7 @@ app.on("window-all-closed", () => {
 src/
 ├── main/                 # Main process files
 │   ├── main.js           # Electron Main Process entry
-│   └── preload.js        # Preload script
+│   └── preload.mjs        # Preload script
 ├── renderer/             # Renderer process files
 │   ├── index.html        # Entry HTML for the UI
 │   └── main.jsx          # Main React/JSX entry point
